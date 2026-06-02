@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Elisa Weller | Portfolio</title>
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="js/projects.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <nav class="navbar" aria-label="Navegación principal">
+        <a href="#inicio" class="navbar__logo">Elisa Weller</a>
+
+        <ul class="navbar__links">
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="inicio" class="hero">
+        <p class="hero__eyebrow">Portfolio personal</p>
+
+        <h1>Elisa Weller</h1>
+
+        <p>
+          Diseñadora multidisciplinar especializada en interiores, identidad
+          visual y diseño de producto.
+        </p>
+
+        <a href="#proyectos" class="button">Ver proyectos</a>
+      </section>
+
+      <section id="sobre-mi" class="about">
+        <h2>Sobre mí</h2>
+
+        <p>
+          Soy una diseñadora guatemalteca residente en Madrid. Me interesa
+          desarrollar conceptos visuales y espaciales que combinen creatividad,
+          funcionalidad y una identidad clara.
+        </p>
+
+        <h3>Disciplinas</h3>
+
+        <ul>
+          <li>Diseño de interiores</li>
+          <li>Branding e identidad visual</li>
+          <li>Diseño gráfico</li>
+          <li>Packaging</li>
+          <li>Diseño de producto</li>
+        </ul>
+      </section>
+
+      <section id="proyectos" class="projects">
+        <h2>Proyectos seleccionados</h2>
+
+        <p>
+          Una selección de proyectos de interiores, diseño gráfico y producto.
+        </p>
+
+        <div class="filters" aria-label="Filtros de proyectos">
+          <button
+            type="button"
+            class="filter-button active"
+            data-filter="todos"
+          >
+            Todos
+          </button>
+
+          <button type="button" class="filter-button" data-filter="interiores">
+            Interiores
+          </button>
+
+          <button type="button" class="filter-button" data-filter="grafico">
+            Gráfico
+          </button>
+
+          <button type="button" class="filter-button" data-filter="producto">
+            Producto
+          </button>
+        </div>
+
+        <div id="project-gallery" class="project-grid"></div>
+      </section>
+
+      <section id="contacto" class="contact">
+        <h2>Contacto</h2>
+
+        <p>
+          ¿Tienes un proyecto o quieres conocer más sobre mi trabajo? Escríbeme.
+        </p>
+
+        <a href="mailto:elisaweller14@gmail.com"> elisaweller14@gmail.com </a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Elisa Weller</p>
+    </footer>
+  </body>
+</html>
