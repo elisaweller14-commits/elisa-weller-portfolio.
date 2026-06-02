@@ -45,3 +45,43 @@ filterButtons.forEach((button) => {
 });
 
 renderProjects(projects);
+const menuToggle = document.querySelector(".navbar__toggle");
+const navbarLinks = document.querySelector(".navbar__links");
+const navbarAnchors = document.querySelectorAll(".navbar__links a");
+
+if (menuToggle && navbarLinks) {
+  menuToggle.addEventListener("click", () => {
+    const isOpen = navbarLinks.classList.toggle("visible");
+
+    menuToggle.classList.toggle("active");
+    menuToggle.setAttribute("aria-expanded", isOpen);
+  });
+
+  navbarAnchors.forEach((link) => {
+    link.addEventListener("click", () => {
+      navbarLinks.classList.remove("visible");
+      menuToggle.classList.remove("active");
+      menuToggle.setAttribute("aria-expanded", "false");
+    });
+  });
+}
+
+const revealElements = document.querySelectorAll(".reveal");
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  },
+  {
+    threshold: 0.15,
+  },
+);
+
+revealElements.forEach((element) => {
+  observer.observe(element);
+});
