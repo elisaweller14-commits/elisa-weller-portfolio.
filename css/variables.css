@@ -1,0 +1,44 @@
+:root {
+  /* Colores */
+  --color-background: #fffaf9;
+  --color-surface: #ffffff;
+  --color-surface-soft: #fceff1;
+  --color-text: #30292c;
+  --color-muted: #817478;
+  --color-accent: #d997a5;
+  --color-accent-dark: #b96f80;
+  --color-accent-light: #f5dce2;
+  --color-border: #ecdde0;
+  --color-dark: #4a3940;
+
+  /* Tipografías */
+  --font-title: Georgia, "Times New Roman", serif;
+  --font-body: Arial, Helvetica, sans-serif;
+
+  /* Tamaños de texto */
+  --text-xs: 0.75rem;
+  --text-sm: 0.9rem;
+  --text-base: 1rem;
+  --text-md: 1.15rem;
+  --text-lg: 1.5rem;
+  --text-xl: clamp(3rem, 9vw, 6.5rem);
+  --text-section-title: clamp(2.2rem, 6vw, 4rem);
+
+  /* Espaciados */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+  --space-xxl: 7rem;
+
+  /* Layout */
+  --content-width: 1200px;
+  --radius-sm: 0.5rem;
+  --radius-md: 1.1rem;
+  --radius-pill: 999px;
+
+  /* Animaciones */
+  --transition-fast: 180ms ease;
+  --transition-medium: 350ms ease;
+}
