@@ -51,23 +51,41 @@
       </section>
 
       <section id="sobre-mi" class="about reveal">
-        <h2>Sobre mí</h2>
+        <div class="about__content">
+          <p class="about__eyebrow">Sobre mí</p>
 
-        <p>
-          Soy una diseñadora estudiante en Madrid. Me interesa desarrollar
-          conceptos visuales y espaciales que combinen creatividad,
-          funcionalidad y una identidad clara.
-        </p>
+          <h2>Diseño con intención, detalle y personalidad.</h2>
 
-        <h3>Disciplinas</h3>
+          <p>
+            Soy una diseñadora estudiante en Madrid. Me interesa desarrollar
+            conceptos visuales y espaciales que combinen creatividad,
+            funcionalidad y una identidad clara.
+          </p>
 
-        <ul>
-          <li>Diseño de interiores</li>
-          <li>Branding e identidad visual</li>
-          <li>Diseño gráfico</li>
-          <li>Packaging</li>
-          <li>Diseño de producto</li>
-        </ul>
+          <p>
+            Disfruto trabajar en proyectos de interiores, branding y producto,
+            explorando cómo los materiales, el color y los pequeños detalles
+            pueden transformar una idea en una experiencia.
+          </p>
+
+          <h3>Disciplinas</h3>
+
+          <ul>
+            <li>Diseño de interiores</li>
+            <li>Branding e identidad visual</li>
+            <li>Diseño gráfico</li>
+            <li>Packaging</li>
+            <li>Diseño de producto</li>
+          </ul>
+        </div>
+
+        <div class="about__image-wrapper">
+          <img
+            class="about__image"
+            src="assets/img/about/elisa-weller.jpg"
+            alt="Retrato de Elisa Weller"
+          />
+        </div>
       </section>
 
       <section id="proyectos" class="projects reveal">
@@ -103,13 +121,57 @@
       </section>
 
       <section id="contacto" class="contact reveal">
-        <h2>Contacto</h2>
+        <div class="contact__intro">
+          <p class="contact__eyebrow">Contacto</p>
 
-        <p>
-          ¿Tienes un proyecto o quieres conocer más sobre mi trabajo? Escríbeme.
-        </p>
+          <h2>¿Creamos algo juntas?</h2>
 
-        <a href="mailto:elisaweller14@gmail.com"> elisaweller14@gmail.com </a>
+          <p>
+            Si quieres conocer más sobre mi trabajo o tienes una propuesta,
+            puedes escribirme mediante este formulario.
+          </p>
+
+          <a class="contact__email" href="mailto:elisaweller14@gmail.com">
+            elisaweller14@gmail.com
+          </a>
+        </div>
+
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="contact-form__field">
+            <label for="name">Nombre</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              autocomplete="name"
+              required
+            />
+          </div>
+
+          <div class="contact-form__field">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              required
+            />
+          </div>
+
+          <div class="contact-form__field">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="button">Enviar mensaje</button>
+
+          <p
+            id="form-message"
+            class="contact-form__message"
+            aria-live="polite"
+          ></p>
+        </form>
       </section>
     </main>
 

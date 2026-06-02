@@ -85,3 +85,24 @@ const observer = new IntersectionObserver(
 revealElements.forEach((element) => {
   observer.observe(element);
 });
+const contactForm = document.querySelector("#contact-form");
+const formMessage = document.querySelector("#form-message");
+
+if (contactForm && formMessage) {
+  contactForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    if (!contactForm.checkValidity()) {
+      formMessage.textContent =
+        "Revisa que todos los campos estén completos y que el email sea válido.";
+
+      contactForm.reportValidity();
+      return;
+    }
+
+    formMessage.textContent =
+      "¡Gracias! El formulario se ha validado correctamente.";
+
+    contactForm.reset();
+  });
+}
